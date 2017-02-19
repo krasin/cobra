@@ -22,7 +22,7 @@ Many of the most widely used Go projects are built using Cobra including:
 
 [![Build Status](https://travis-ci.org/spf13/cobra.svg "Travis CI status")](https://travis-ci.org/spf13/cobra)
 [![CircleCI status](https://circleci.com/gh/spf13/cobra.png?circle-token=:circle-token "CircleCI status")](https://circleci.com/gh/spf13/cobra)
-[![GoDoc](https://godoc.org/github.com/spf13/cobra?status.svg)](https://godoc.org/github.com/spf13/cobra) 
+[![GoDoc](https://godoc.org/github.com/krasin/cobra?status.svg)](https://godoc.org/github.com/spf13/cobra) 
 
 ![cobra](https://cloud.githubusercontent.com/assets/173412/10911369/84832a8e-8212-11e5-9f82-cc96660a4794.gif)
 
@@ -129,12 +129,12 @@ Using Cobra is easy. First, use `go get` to install the latest version
 of the library. This command will install the `cobra` generator executible
 along with the library:
 
-    > go get -v github.com/spf13/cobra/cobra
+    > go get -v github.com/krasin/cobra/cobra
 
 Next, include Cobra in your application:
 
 ```go
-import "github.com/spf13/cobra"
+import "github.com/krasin/cobra"
 ```
 
 # Getting Started
@@ -179,7 +179,7 @@ commands you want. It's the easiest way to incorporate Cobra into your applicati
 
 In order to use the cobra command, compile it using the following command:
 
-    > go install github.com/spf13/cobra/cobra
+    > go install github.com/krasin/cobra/cobra
 
 This will create the cobra executable under your go path bin directory!
 
@@ -346,7 +346,7 @@ populate it with the following:
 package cmd
 
 import (
-	"github.com/spf13/cobra"
+	"github.com/krasin/cobra"
 	"fmt"
 )
 
@@ -433,7 +433,7 @@ by not providing a 'Run' for the 'rootCmd'.
 
 We have only defined one flag for a single command.
 
-More documentation about flags is available at https://github.com/spf13/pflag
+More documentation about flags is available at https://github.com/krasin/pflag
 
 ```go
 package main
@@ -442,7 +442,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/spf13/cobra"
+	"github.com/krasin/cobra"
 )
 
 func main() {
@@ -690,7 +690,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
+	"github.com/krasin/cobra"
 )
 
 func main() {
@@ -767,7 +767,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/spf13/cobra"
+	"github.com/krasin/cobra"
 )
 
 func main() {
@@ -903,7 +903,7 @@ Names in no particular order:
 
 ## License
 
-Cobra is released under the Apache 2.0 license. See [LICENSE.txt](https://github.com/spf13/cobra/blob/master/LICENSE.txt)
+Cobra is released under the Apache 2.0 license. See [LICENSE.txt](https://github.com/krasin/cobra/blob/master/LICENSE.txt)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/spf13/cobra/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

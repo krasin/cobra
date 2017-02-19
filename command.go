@@ -24,7 +24,7 @@ import (
 	"sort"
 	"strings"
 
-	flag "github.com/spf13/pflag"
+	flag "github.com/krasin/pflag"
 )
 
 // Command is just that, a command for your application.
@@ -580,7 +580,7 @@ func (c *Command) Root() *Command {
 // ArgsLenAtDash will return the length of f.Args at the moment when a -- was
 // found during arg parsing. This allows your program to know which args were
 // before the -- and which came after. (Description from
-// https://godoc.org/github.com/spf13/pflag#FlagSet.ArgsLenAtDash).
+// https://godoc.org/github.com/krasin/pflag#FlagSet.ArgsLenAtDash).
 func (c *Command) ArgsLenAtDash() int {
 	return c.Flags().ArgsLenAtDash()
 }
